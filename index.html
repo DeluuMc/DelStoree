@@ -3,85 +3,150 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>@DeluMc</title>
+  <title>Jasa Profesional | DeluMc</title>
+
+  <!-- FONT MINECRAFT -->
+  <link href="https://fonts.cdnfonts.com/css/minecraftia" rel="stylesheet">
+
   <style>
     body {
+      font-family: 'Minecraftia', sans-serif;
       margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background: linear-gradient(to bottom, #ff9bbf, #ffffff);
-      color: #333;
+      background: #12091b; /* ungu kehitaman */
+      color: #e5d9ff;
+    }
+
+    header {
+      background: #3d0066;
+      color: white;
+      padding: 25px;
+      text-align: center;
+      box-shadow: 0 0 10px #6a00ff;
+    }
+
+    .hero {
+      padding: 60px 20px;
+      text-align: center;
+      background: #1a0f26;
+      border-bottom: 3px solid #4e00a8;
+    }
+
+    .hero h1 {
+      margin-bottom: 10px;
+      font-size: 32px;
+      color: #d8c7ff;
+      text-shadow: 0 0 8px #8d2bff;
+    }
+
+    .btn {
+      display: inline-block;
+      background: #6a00ff;
+      color: white;
+      padding: 12px 25px;
+      border-radius: 8px;
+      text-decoration: none;
+      margin-top: 15px;
+      box-shadow: 0 0 10px #6a00ff;
+      transition: 0.2s;
+    }
+
+    .btn:hover {
+      transform: scale(1.05);
     }
 
     .container {
-      max-width: 480px;
+      width: 90%;
+      max-width: 900px;
       margin: auto;
-      padding: 40px 20px;
+    }
+
+    .section {
+      background: #1a0f26;
+      padding: 30px;
+      margin-top: 25px;
+      border-radius: 12px;
+      box-shadow: 0 0 10px #3b0070;
+      border: 2px solid #4e00a8;
+    }
+
+    .services {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 20px;
+    }
+
+    .service-box {
+      background: #2a1a3d;
+      padding: 20px;
+      border-radius: 10px;
       text-align: center;
+      border: 2px solid #6a00ff;
+      box-shadow: 0 0 12px #4b0093;
     }
 
-    .profile-pic {
-      width: 110px;
-      height: 110px;
-      border-radius: 50%;
-      object-fit: cover;
-      border: 3px solid #ff6fa6;
-      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
-      margin-bottom: 20px;
-    }
-
-    .username {
-      font-size: 1.9rem;
-      font-weight: bold;
-      margin-bottom: 25px;
-      color: #333;
-    }
-
-    .menu-item {
-      display: block;
-      background: #ffffff;
-      border-radius: 14px;
-      margin: 12px 0;
-      padding: 15px 18px;
-      text-decoration: none;
-      color: #333;
-      font-size: 1.1rem;
-      font-weight: 600;
-      box-shadow: 0 4px 12px rgba(0,0,0,0.05);
-      transition: 0.2s ease;
-    }
-
-    .menu-item:hover {
-      background: #ffe1ed;
-      transform: scale(1.02);
-    }
-
-    .footer {
+    footer {
+      margin-top: 40px;
+      padding: 20px;
       text-align: center;
-      margin-top: 45px;
-      color: #666;
-      font-size: 0.85rem;
+      background: #3d0066;
+      color: white;
+      box-shadow: 0 0 10px #6a00ff;
     }
   </style>
 </head>
 <body>
-  <div class="container">
 
-    <!-- Ganti foto.jpg dengan foto kamu -->
-    <img src="foto.jpg" alt="Foto Profil" class="profile-pic" />
+<header>
+  <h2>Jasa Profesional DeluMc</h2>
+</header>
 
-    <div class="username">@DeluMc</div>
-    
-    <a href="https://sociabuzz.com/delumc/tribe" class="menu-item">Donasi / Sociabuzz</a>
-    <a href="https://discord.gg/893WdXJkW" class="menu-item">Discord</a>
-    <a href="https://youtube.com/@delumc?si=zMlaPCZ2DfDqAkzJ" class="menu-item">YOUTUBE</a>
-    <a href="https://www.whatsapp.com/channel/0029Vb4FaFR6RGJDbUOScz2s" class="menu-item">Saluran WhatsApp</a>
-    <a href="https://www.instagram.com/nabil_evendiii/?igsh=MTlnbmhjeTIyc3Z2OA%3D%3D" class="menu-item">Instagram</a>
-    <a href="https://www.tiktok.com/@delu25_?_t=ZS-8xQmpnpZEGt&_r=1" class="menu-item">Tiktok Utama</a>
-    <a href="https://www.tiktok.com/@zoeyemylie?_t=ZS-8xQn62vUtqp&_r=1" class="menu-item">Tiktok Kedua</a>
-    <a href="https://www.tiktok.com/@dellmc3" class="menu-item">Tiktok Ketiga</a>
+<section class="hero">
+  <h1>Butuh Jasa? Kami Siap Membantu!</h1>
+  <p>Kami menyediakan berbagai layanan cepat, murah, dan terpercaya.</p>
+  <a href="#kontak" class="btn">Hubungi Sekarang</a>
+</section>
 
-    <div class="footer">© 2025 DeluMc</div>
+<div class="container">
 
+  <!-- Layanan -->
+  <div class="section">
+    <h2>Layanan Kami</h2>
+    <div class="services">
+      <div class="service-box">
+        <h3>🔧 Jasa Perbaikan</h3>
+        <p>Perbaikan barang, alat rumah, dan lainnya.</p>
+      </div>
+      <div class="service-box">
+        <h3>💻 Jasa Digital</h3>
+        <p>Desain logo, editing foto/video, website.</p>
+      </div>
+      <div class="service-box">
+        <h3>📱 Jasa Online</h3>
+        <p>Pengelolaan sosial media, promosi, dan konten.</p>
+      </div>
+    </div>
   </div>
+
+  <!-- Tentang -->
+  <div class="section">
+    <h2>Tentang Kami</h2>
+    <p>Kami adalah penyedia jasa terpercaya yang siap memberikan hasil terbaik untuk kebutuhan Anda. Dengan tema unik bergaya Minecraft, website ini dibuat untuk menarik perhatian dan terlihat premium.</p>
+  </div>
+
+  <!-- Kontak -->
+  <div class="section" id="kontak">
+    <h2>Kontak</h2>
+    <p>📞 WhatsApp: <b>08xxxxxxxx</b></p>
+    <p>📍 Lokasi: Indonesia</p>
+    <p>Klik tombol di bawah untuk chat langsung:</p>
+    <a href="https://wa.me/628xxxxxx" class="btn">Chat WhatsApp</a>
+  </div>
+
+</div>
+
+<footer>
+  <p>© 2025 DeluMc — Semua Hak Dilindungi</p>
+</footer>
+
 </body>
 </html>
